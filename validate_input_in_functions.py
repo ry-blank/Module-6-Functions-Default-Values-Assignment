@@ -8,6 +8,7 @@ area and the perimeter of a rectangle from a
 list of numbers.
 """
 
+
 def score_input(test_name, test_score=0, invalid_message='Invalid test score, try again!'):
     """
     :param test_name: name input by user
@@ -15,9 +16,8 @@ def score_input(test_name, test_score=0, invalid_message='Invalid test score, tr
     :param invalid_message: message for bad input
     :return:
     """
-    # return { test_name: test_score}
-    pass
+    return test_name + ": " + str(test_score)
 
 
 if __name__ == '__main__':
-    score_input()
+    score_input("TestScore")
